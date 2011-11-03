@@ -12,14 +12,6 @@
 
 @synthesize versionLabel = _versionLabel;
 
-#pragma mark Object Lifecycle
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
-
 #pragma mark View Lifecycle
 
 - (void)viewDidLoad
