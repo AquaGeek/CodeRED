@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ForumRootViewController.h
 //  CodeRED
 //
 //  Created by Tyler Stromberg on 11/2/11.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface ForumRootViewController : UITableViewController
+
+@property (strong, nonatomic) IBOutlet UIView *footerView;
 
 @end

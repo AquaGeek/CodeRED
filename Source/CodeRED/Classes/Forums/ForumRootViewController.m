@@ -1,14 +1,16 @@
 //
-//  FirstViewController.m
+//  ForumRootViewController.m
 //  CodeRED
 //
 //  Created by Tyler Stromberg on 11/2/11.
 //  Copyright (c) 2011 Lab 42 Development. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ForumRootViewController.h"
 
-@implementation FirstViewController
+@implementation ForumRootViewController
+
+@synthesize footerView = _footerView;
 
 - (void)didReceiveMemoryWarning
 {
@@ -16,19 +18,20 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.tableView.tableFooterView = _footerView;
 }
 
 - (void)viewDidUnload
 {
+    self.footerView = nil;
+    
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -54,7 +57,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end
