@@ -10,4 +10,6 @@
 
 @interface ForumListViewController : UITableViewController
 
+@property (strong, nonatomic) IBOutlet UIView *footerView;
+
 @end
