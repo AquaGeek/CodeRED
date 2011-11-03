@@ -48,7 +48,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="tEp-gp-mcx" kind="push" id="ylI-0x-3Hl"/>
+                                    <segue destination="tEp-gp-mcx" kind="push" identifier="ForumDetail" id="ylI-0x-3Hl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,7 +57,9 @@
                             <outlet property="delegate" destination="7Fh-h2-yHy" id="zUw-1c-yLv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="RedUser" id="u6P-cd-Jpf"/>
+                    <navigationItem key="navigationItem" title="RedUser" id="u6P-cd-Jpf">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="yBP-0K-0Ve"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="footerView" destination="8cK-Bo-41I" id="b0W-xb-34T"/>
                     </connections>
@@ -72,11 +74,9 @@
                             <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
-                            <metadata/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <metadata/>
                 </view>
             </objects>
             <point key="canvasLocation" x="1103" y="-125"/>

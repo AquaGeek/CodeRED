@@ -9,7 +9,17 @@
 #import "ForumRootViewController.h"
 
 #import "Forum.h"
+#import "ForumViewController.h"
 #import "SectionHeaderView.h"
+
+@interface ForumRootViewController()
+
+- (Forum *)childForumAtIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+
+#pragma mark -
 
 @implementation ForumRootViewController
 
@@ -48,6 +58,33 @@
 }
 
 
+#pragma mark -
+
+- (Forum *)childForumAtIndexPath:(NSIndexPath *)indexPath
+{
+    // TODO: Sanity check
+    Forum *parentForum = [[Forum rootForum].childForums objectAtIndex:indexPath.section];
+    Forum *childForum = [parentForum.childForums objectAtIndex:indexPath.row];
+    
+    return childForum;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ForumDetail"])
+    {
+        Forum *selectedForum = [self childForumAtIndexPath:[self.tableView indexPathForSelectedRow]];
+        
+        if (selectedForum != nil)
+        {
+            // Pass the selected forum to the next view controller
+            ForumViewController *forumVC = segue.destinationViewController;
+            forumVC.forum = selectedForum;
+        }
+    }
+}
+
+
 #pragma mark - UITableView DataSource Methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -74,8 +111,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    Forum *parentForum = [[Forum rootForum].childForums objectAtIndex:indexPath.section];
-    Forum *childForum = [parentForum.childForums objectAtIndex:indexPath.row];
+    Forum *childForum = [self childForumAtIndexPath:indexPath];
     cell.textLabel.text = childForum.title;
     
     return cell;

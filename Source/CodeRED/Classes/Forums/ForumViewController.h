@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Forum;
+
 @interface ForumViewController : UITableViewController
+
+@property (strong, nonatomic) Forum *forum;
 
 @end
