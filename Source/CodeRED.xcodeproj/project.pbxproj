@@ -15,7 +15,7 @@
 		2F5F2F401462128500821C84 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F3E1462128500821C84 /* MainStoryboard.storyboard */; };
 		2F5F2F621462161800821C84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F5D1462161800821C84 /* AppDelegate.m */; };
 		2F5F2F631462161800821C84 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F5F1462161800821C84 /* FirstViewController.m */; };
-		2F5F2F641462161800821C84 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F611462161800821C84 /* SecondViewController.m */; };
+		2F5F2F691462167A00821C84 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F681462167A00821C84 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		2F5F2F5D1462161800821C84 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2F5F2F5E1462161800821C84 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		2F5F2F5F1462161800821C84 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		2F5F2F601462161800821C84 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		2F5F2F611462161800821C84 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2F5F2F671462167A00821C84 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		2F5F2F681462167A00821C84 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +105,18 @@
 				2F5F2F5D1462161800821C84 /* AppDelegate.m */,
 				2F5F2F5E1462161800821C84 /* FirstViewController.h */,
 				2F5F2F5F1462161800821C84 /* FirstViewController.m */,
-				2F5F2F601462161800821C84 /* SecondViewController.h */,
-				2F5F2F611462161800821C84 /* SecondViewController.m */,
+				2F5F2F661462167A00821C84 /* About View */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		2F5F2F661462167A00821C84 /* About View */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F2F671462167A00821C84 /* AboutViewController.h */,
+				2F5F2F681462167A00821C84 /* AboutViewController.m */,
+			);
+			path = "About View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +185,7 @@
 				2F5F2F391462128500821C84 /* main.m in Sources */,
 				2F5F2F621462161800821C84 /* AppDelegate.m in Sources */,
 				2F5F2F631462161800821C84 /* FirstViewController.m in Sources */,
-				2F5F2F641462161800821C84 /* SecondViewController.m in Sources */,
+				2F5F2F691462167A00821C84 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

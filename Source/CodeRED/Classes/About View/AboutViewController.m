@@ -1,14 +1,14 @@
 //
-//  SecondViewController.m
+//  AboutViewController.m
 //  CodeRED
 //
 //  Created by Tyler Stromberg on 11/2/11.
 //  Copyright (c) 2011 Lab 42 Development. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "AboutViewController.h"
 
-@implementation SecondViewController
+@implementation AboutViewController
 
 - (void)didReceiveMemoryWarning
 {

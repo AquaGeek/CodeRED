@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  AboutViewController.h
 //  CodeRED
 //
 //  Created by Tyler Stromberg on 11/2/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface AboutViewController : UIViewController
 
 @end
