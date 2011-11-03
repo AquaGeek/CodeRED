@@ -118,6 +118,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="Info.png" id="6"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="versionLabel" destination="wRu-f9-lOc" id="CAJ-kH-auK"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
@@ -148,6 +151,9 @@
     <classes>
         <class className="AboutViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="versionLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="FirstViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
