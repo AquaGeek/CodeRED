@@ -22,6 +22,7 @@
 		2F5F2F861462245600821C84 /* Forum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F851462245600821C84 /* Forum.m */; };
 		2F5F2F881462254200821C84 /* ForumStructure.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F871462254200821C84 /* ForumStructure.plist */; };
 		2F5F2F8B1462257800821C84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F891462257800821C84 /* Localizable.strings */; };
+		2F5F2F971462360800821C84 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F961462360800821C84 /* SectionHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		2F5F2F851462245600821C84 /* Forum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Forum.m; sourceTree = "<group>"; };
 		2F5F2F871462254200821C84 /* ForumStructure.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ForumStructure.plist; sourceTree = "<group>"; };
 		2F5F2F8A1462257800821C84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2F5F2F951462360800821C84 /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
+		2F5F2F961462360800821C84 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 			children = (
 				2F5F2F5C1462161800821C84 /* AppDelegate.h */,
 				2F5F2F5D1462161800821C84 /* AppDelegate.m */,
+				2F5F2F911462347400821C84 /* Global */,
 				2F5F2F661462167A00821C84 /* About View */,
 				2F5F2F7214621D8E00821C84 /* Forums */,
 				2F5F2F82146223D300821C84 /* Model */,
@@ -163,6 +167,15 @@
 				2F5F2F851462245600821C84 /* Forum.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2F5F2F911462347400821C84 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F2F951462360800821C84 /* SectionHeaderView.h */,
+				2F5F2F961462360800821C84 /* SectionHeaderView.m */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +251,7 @@
 				2F5F2F7814621DBB00821C84 /* ForumRootViewController.m in Sources */,
 				2F5F2F7D1462229B00821C84 /* ForumViewController.m in Sources */,
 				2F5F2F861462245600821C84 /* Forum.m in Sources */,
+				2F5F2F971462360800821C84 /* SectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

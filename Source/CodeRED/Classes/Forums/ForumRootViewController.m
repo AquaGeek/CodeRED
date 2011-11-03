@@ -9,6 +9,7 @@
 #import "ForumRootViewController.h"
 
 #import "Forum.h"
+#import "SectionHeaderView.h"
 
 @implementation ForumRootViewController
 
@@ -57,21 +58,8 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     Forum *currentForum = [[Forum rootForum].childForums objectAtIndex:section];
-    
-    UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
-    backgroundView.backgroundColor = [UIColor blackColor];
-    backgroundView.frame = CGRectMake(0.0f, 0.0f, 320.0f, 22.0f);
-    
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    titleLabel.font = [UIFont boldSystemFontOfSize:16.0f];
-    titleLabel.textColor = [UIColor whiteColor];
-    titleLabel.backgroundColor = [UIColor clearColor];
-    titleLabel.opaque = NO;
-    titleLabel.text = currentForum.title;
-    titleLabel.frame = CGRectInset(backgroundView.bounds, 10.0f, 0.0f);
-    [backgroundView addSubview:titleLabel];
-    
-    return backgroundView;
+    SectionHeaderView *headerView = [[SectionHeaderView alloc] initWithTitle:currentForum.title];
+    return headerView;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
