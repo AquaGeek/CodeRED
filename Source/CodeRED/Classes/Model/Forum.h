@@ -13,6 +13,8 @@
 @property (copy, nonatomic) NSString *forumId;
 @property (copy, nonatomic) NSString *title;
 @property (copy, nonatomic, readonly) NSMutableArray *childForums;
+@property (copy, nonatomic, readonly) NSMutableArray *threads;
+@property (assign, nonatomic) NSInteger totalThreads;
 
 + (Forum *)rootForum;
 

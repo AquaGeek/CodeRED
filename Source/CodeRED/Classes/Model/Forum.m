@@ -13,6 +13,8 @@
 @synthesize forumId = _forumId;
 @synthesize title = _title;
 @synthesize childForums = _childForums;
+@synthesize threads = _threads;
+@synthesize totalThreads = _totalThreads;
 
 + (Forum *)rootForum
 {
@@ -62,6 +64,7 @@
     {
         _title = [title copy];
         _childForums = [[NSMutableArray alloc] init];
+        _threads = [[NSMutableArray alloc] init];
     }
     
     return self;
