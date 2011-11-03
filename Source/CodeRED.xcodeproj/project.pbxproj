@@ -19,6 +19,9 @@
 		2F5F2F7814621DBB00821C84 /* ForumRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F7714621DBB00821C84 /* ForumRootViewController.m */; };
 		2F5F2F7A14621E3100821C84 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F7914621E3100821C84 /* 09-chat-2.png */; };
 		2F5F2F7D1462229B00821C84 /* ForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F7C1462229B00821C84 /* ForumViewController.m */; };
+		2F5F2F861462245600821C84 /* Forum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F851462245600821C84 /* Forum.m */; };
+		2F5F2F881462254200821C84 /* ForumStructure.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F871462254200821C84 /* ForumStructure.plist */; };
+		2F5F2F8B1462257800821C84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F891462257800821C84 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,10 @@
 		2F5F2F7914621E3100821C84 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
 		2F5F2F7B1462229B00821C84 /* ForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumViewController.h; sourceTree = "<group>"; };
 		2F5F2F7C1462229B00821C84 /* ForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumViewController.m; sourceTree = "<group>"; };
+		2F5F2F841462245600821C84 /* Forum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forum.h; sourceTree = "<group>"; };
+		2F5F2F851462245600821C84 /* Forum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Forum.m; sourceTree = "<group>"; };
+		2F5F2F871462254200821C84 /* ForumStructure.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ForumStructure.plist; sourceTree = "<group>"; };
+		2F5F2F8A1462257800821C84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +109,8 @@
 				2F5F2F351462128500821C84 /* InfoPlist.strings */,
 				2F5F2F381462128500821C84 /* main.m */,
 				2F5F2F3A1462128500821C84 /* CodeRED-Prefix.pch */,
+				2F5F2F871462254200821C84 /* ForumStructure.plist */,
+				2F5F2F891462257800821C84 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,6 +122,7 @@
 				2F5F2F5D1462161800821C84 /* AppDelegate.m */,
 				2F5F2F661462167A00821C84 /* About View */,
 				2F5F2F7214621D8E00821C84 /* Forums */,
+				2F5F2F82146223D300821C84 /* Model */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -144,6 +154,15 @@
 				2F5F2F7C1462229B00821C84 /* ForumViewController.m */,
 			);
 			path = Forums;
+			sourceTree = "<group>";
+		};
+		2F5F2F82146223D300821C84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F2F841462245600821C84 /* Forum.h */,
+				2F5F2F851462245600821C84 /* Forum.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +220,8 @@
 				2F5F2F401462128500821C84 /* MainStoryboard.storyboard in Resources */,
 				2F5F2F6C1462191A00821C84 /* Info.png in Resources */,
 				2F5F2F7A14621E3100821C84 /* 09-chat-2.png in Resources */,
+				2F5F2F881462254200821C84 /* ForumStructure.plist in Resources */,
+				2F5F2F8B1462257800821C84 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +237,7 @@
 				2F5F2F691462167A00821C84 /* AboutViewController.m in Sources */,
 				2F5F2F7814621DBB00821C84 /* ForumRootViewController.m in Sources */,
 				2F5F2F7D1462229B00821C84 /* ForumViewController.m in Sources */,
+				2F5F2F861462245600821C84 /* Forum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +258,14 @@
 				2F5F2F3F1462128500821C84 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		2F5F2F891462257800821C84 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F5F2F8A1462257800821C84 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,7 +322,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CodeRED/CodeRED-Prefix.pch";
 				INFOPLIST_FILE = "CodeRED/CodeRED-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "Code:RED";
 				WRAPPER_EXTENSION = app;
 			};
@@ -304,7 +334,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CodeRED/CodeRED-Prefix.pch";
 				INFOPLIST_FILE = "CodeRED/CodeRED-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "Code:RED";
 				WRAPPER_EXTENSION = app;
 			};
