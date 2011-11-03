@@ -12,10 +12,10 @@
 		2F5F2F311462128500821C84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5F2F301462128500821C84 /* CoreGraphics.framework */; };
 		2F5F2F371462128500821C84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F351462128500821C84 /* InfoPlist.strings */; };
 		2F5F2F391462128500821C84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F381462128500821C84 /* main.m */; };
-		2F5F2F3D1462128500821C84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F3C1462128500821C84 /* AppDelegate.m */; };
 		2F5F2F401462128500821C84 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F3E1462128500821C84 /* MainStoryboard.storyboard */; };
-		2F5F2F431462128500821C84 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F421462128500821C84 /* FirstViewController.m */; };
-		2F5F2F4A1462128500821C84 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F491462128500821C84 /* SecondViewController.m */; };
+		2F5F2F621462161800821C84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F5D1462161800821C84 /* AppDelegate.m */; };
+		2F5F2F631462161800821C84 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F5F1462161800821C84 /* FirstViewController.m */; };
+		2F5F2F641462161800821C84 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F611462161800821C84 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +27,13 @@
 		2F5F2F361462128500821C84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F5F2F381462128500821C84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F5F2F3A1462128500821C84 /* CodeRED-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeRED-Prefix.pch"; sourceTree = "<group>"; };
-		2F5F2F3B1462128500821C84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2F5F2F3C1462128500821C84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2F5F2F3F1462128500821C84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		2F5F2F411462128500821C84 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		2F5F2F421462128500821C84 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		2F5F2F481462128500821C84 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		2F5F2F491462128500821C84 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2F5F2F5C1462161800821C84 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F5F2F5D1462161800821C84 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F5F2F5E1462161800821C84 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		2F5F2F5F1462161800821C84 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		2F5F2F601462161800821C84 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2F5F2F611462161800821C84 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,13 +80,8 @@
 		2F5F2F321462128500821C84 /* CodeRED */ = {
 			isa = PBXGroup;
 			children = (
-				2F5F2F3B1462128500821C84 /* AppDelegate.h */,
-				2F5F2F3C1462128500821C84 /* AppDelegate.m */,
+				2F5F2F5B1462161800821C84 /* Classes */,
 				2F5F2F3E1462128500821C84 /* MainStoryboard.storyboard */,
-				2F5F2F411462128500821C84 /* FirstViewController.h */,
-				2F5F2F421462128500821C84 /* FirstViewController.m */,
-				2F5F2F481462128500821C84 /* SecondViewController.h */,
-				2F5F2F491462128500821C84 /* SecondViewController.m */,
 				2F5F2F331462128500821C84 /* Supporting Files */,
 			);
 			path = CodeRED;
@@ -101,6 +96,19 @@
 				2F5F2F3A1462128500821C84 /* CodeRED-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F5F2F5B1462161800821C84 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F2F5C1462161800821C84 /* AppDelegate.h */,
+				2F5F2F5D1462161800821C84 /* AppDelegate.m */,
+				2F5F2F5E1462161800821C84 /* FirstViewController.h */,
+				2F5F2F5F1462161800821C84 /* FirstViewController.m */,
+				2F5F2F601462161800821C84 /* SecondViewController.h */,
+				2F5F2F611462161800821C84 /* SecondViewController.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5F2F391462128500821C84 /* main.m in Sources */,
-				2F5F2F3D1462128500821C84 /* AppDelegate.m in Sources */,
-				2F5F2F431462128500821C84 /* FirstViewController.m in Sources */,
-				2F5F2F4A1462128500821C84 /* SecondViewController.m in Sources */,
+				2F5F2F621462161800821C84 /* AppDelegate.m in Sources */,
+				2F5F2F631462161800821C84 /* FirstViewController.m in Sources */,
+				2F5F2F641462161800821C84 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +291,7 @@
 				2F5F2F531462128500821C84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
