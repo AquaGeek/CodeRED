@@ -16,6 +16,7 @@
 		2F5F2F621462161800821C84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F5D1462161800821C84 /* AppDelegate.m */; };
 		2F5F2F631462161800821C84 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F5F1462161800821C84 /* FirstViewController.m */; };
 		2F5F2F691462167A00821C84 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F681462167A00821C84 /* AboutViewController.m */; };
+		2F5F2F6C1462191A00821C84 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F6B1462191A00821C84 /* Info.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2F5F2F5F1462161800821C84 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		2F5F2F671462167A00821C84 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		2F5F2F681462167A00821C84 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		2F5F2F6B1462191A00821C84 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +82,9 @@
 		2F5F2F321462128500821C84 /* CodeRED */ = {
 			isa = PBXGroup;
 			children = (
-				2F5F2F5B1462161800821C84 /* Classes */,
 				2F5F2F3E1462128500821C84 /* MainStoryboard.storyboard */,
+				2F5F2F5B1462161800821C84 /* Classes */,
+				2F5F2F6A1462172B00821C84 /* Images */,
 				2F5F2F331462128500821C84 /* Supporting Files */,
 			);
 			path = CodeRED;
@@ -117,6 +120,14 @@
 				2F5F2F681462167A00821C84 /* AboutViewController.m */,
 			);
 			path = "About View";
+			sourceTree = "<group>";
+		};
+		2F5F2F6A1462172B00821C84 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F2F6B1462191A00821C84 /* Info.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			files = (
 				2F5F2F371462128500821C84 /* InfoPlist.strings in Resources */,
 				2F5F2F401462128500821C84 /* MainStoryboard.storyboard in Resources */,
+				2F5F2F6C1462191A00821C84 /* Info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
