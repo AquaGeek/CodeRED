@@ -46,4 +46,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+#pragma mark -
+
+- (IBAction)glyphishTapped:(id)sender
+{
+    // Open in MobileSafari
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://glyphish.com"]];
+}
+
 @end

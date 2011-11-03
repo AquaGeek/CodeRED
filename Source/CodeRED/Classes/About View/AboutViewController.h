@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *versionLabel;
 
+- (IBAction)glyphishTapped:(id)sender;
+
 @end
