@@ -1,5 +1,5 @@
 //
-//  ForumViewController.h
+//  SectionHeaderView.h
 //  CodeRED
 //
 //  Created by Tyler Stromberg on 11/2/11.
@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class Forum;
+@interface SectionHeaderView : UIView
 
-@interface ForumViewController : UITableViewController
+@property (strong, nonatomic) NSString *title;
 
-@property (strong, nonatomic) Forum *forum;
+- (id)initWithTitle:(NSString *)title;
 
 @end

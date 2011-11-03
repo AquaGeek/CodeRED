@@ -1,0 +1,75 @@
+/* 
+   Localizable.strings
+   REDUser
+
+   Created by Tyler Stromberg on 3/3/10.
+   Copyright 2010-2011 WT Publishing. All rights reserved.
+ */
+
+// General strings
+"RedUser" = "RedUser";
+"Back" = "Back";
+"Error" = "Error";
+"Cancel" = "Cancel";
+
+"PleaseLogin" = "Please login";
+"Login" = "Login";
+"Logout" = "Logout";
+"GenericLoginFailure" = "A login error occured. Please verify your username and password and try again.";
+"GenericConnectionFailure" = "A server error occurred. Please try again later.";
+"TooManyAttempts" = "Wrong username or password. You have used up your failed login quota! Please wait 15 minutes before trying again.";
+
+// Top-level forums
+"RedDigitalCinema" = "Red Digital Cinema";
+"DSMCSystem" = "The DSMC System";
+"ShootingRed" = "Shooting RED";
+"RedUserGroups" = "RedUser User Groups";
+"EverythingElse" = "Everything Else";
+
+// Red Digital Cinema forums
+"Recon" = "Recon";
+"RedDiscussion" = "RED DISCUSSION";
+"CrucialOrdnance" = "Crucial Ordnance";
+
+// The DSMC System forums
+"Epic" = "EPIC";
+"RedOne" = "RED ONE";
+"Scarlet" = "SCARLET";
+"DSMCFashionPhotography" = "DSMC Fashion Photography";
+"RedWorkflow" = "RED Workflow";
+"DSMCAccessories" = "Accessories for DSMC";
+"RedRay" = "RED RAY";
+"PostProductionHardware" = "Post-Production HARDWARE";
+"BugsProblemsHelp" = "Bugs / Problems / Help!";
+
+// Shooting RED forums
+"ShotOnRed" = "SHOT ON RED";
+"Cinematography" = "Cinematography";
+"Audio" = "Audio";
+"OpenCut" = "Open Cut";
+"LensTests" = "Lens Tests";
+"EfpEngRed" = "EFP / ENG and RED";
+"3D" = "3D";
+
+// Everything Else forums
+"OffTopic" = "Off Topic";
+"ForSale" = "RED stuff for sale";
+"OtherCameras" = "Other Cameras";
+"RentalGroup" = "Red Owners Rental Group";
+"ForHire" = "Jobs / Equipment for Hire";
+"Complaints" = "Complaint Department";
+"Unboxing" = "Unboxing";
+
+// RedUser User Groups forums
+"USAWest" = "USA - West";
+"USAMidwest" = "USA - MidWest";
+"Asia" = "Asia";
+"USAEast" = "USA - East";
+"Japan" = "Japan";
+"Europe" = "Europe";
+"Canada" = "Canada";
+"AustraliaNewZealand" = "Australia & New Zealand - ANZRUG";
+"EverywhereElse" = "Everywhere Else";
+
+// Thread view
+"PostsLabelFormat" = "%d Posts Total\n%d Loaded";
