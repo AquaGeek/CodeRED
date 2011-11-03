@@ -1,14 +1,14 @@
 //
-//  FirstViewController.m
+//  ForumListViewController.m
 //  CodeRED
 //
 //  Created by Tyler Stromberg on 11/2/11.
 //  Copyright (c) 2011 Lab 42 Development. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ForumListViewController.h"
 
-@implementation FirstViewController
+@implementation ForumListViewController
 
 - (void)didReceiveMemoryWarning
 {
