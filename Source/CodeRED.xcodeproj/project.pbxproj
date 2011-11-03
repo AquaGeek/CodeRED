@@ -18,6 +18,7 @@
 		2F5F2F6C1462191A00821C84 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F6B1462191A00821C84 /* Info.png */; };
 		2F5F2F7814621DBB00821C84 /* ForumRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F7714621DBB00821C84 /* ForumRootViewController.m */; };
 		2F5F2F7A14621E3100821C84 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F7914621E3100821C84 /* 09-chat-2.png */; };
+		2F5F2F7D1462229B00821C84 /* ForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F7C1462229B00821C84 /* ForumViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		2F5F2F7614621DBB00821C84 /* ForumRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumRootViewController.h; sourceTree = "<group>"; };
 		2F5F2F7714621DBB00821C84 /* ForumRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumRootViewController.m; sourceTree = "<group>"; };
 		2F5F2F7914621E3100821C84 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
+		2F5F2F7B1462229B00821C84 /* ForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumViewController.h; sourceTree = "<group>"; };
+		2F5F2F7C1462229B00821C84 /* ForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 			children = (
 				2F5F2F7614621DBB00821C84 /* ForumRootViewController.h */,
 				2F5F2F7714621DBB00821C84 /* ForumRootViewController.m */,
+				2F5F2F7B1462229B00821C84 /* ForumViewController.h */,
+				2F5F2F7C1462229B00821C84 /* ForumViewController.m */,
 			);
 			path = Forums;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				2F5F2F621462161800821C84 /* AppDelegate.m in Sources */,
 				2F5F2F691462167A00821C84 /* AboutViewController.m in Sources */,
 				2F5F2F7814621DBB00821C84 /* ForumRootViewController.m in Sources */,
+				2F5F2F7D1462229B00821C84 /* ForumViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
