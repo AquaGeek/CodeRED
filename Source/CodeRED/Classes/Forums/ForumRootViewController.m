@@ -1,14 +1,14 @@
 //
-//  ForumListViewController.m
+//  ForumRootViewController.m
 //  CodeRED
 //
 //  Created by Tyler Stromberg on 11/2/11.
 //  Copyright (c) 2011 Lab 42 Development. All rights reserved.
 //
 
-#import "ForumListViewController.h"
+#import "ForumRootViewController.h"
 
-@implementation ForumListViewController
+@implementation ForumRootViewController
 
 @synthesize footerView = _footerView;
 

@@ -16,7 +16,7 @@
 		2F5F2F621462161800821C84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F5D1462161800821C84 /* AppDelegate.m */; };
 		2F5F2F691462167A00821C84 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F681462167A00821C84 /* AboutViewController.m */; };
 		2F5F2F6C1462191A00821C84 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F6B1462191A00821C84 /* Info.png */; };
-		2F5F2F7814621DBB00821C84 /* ForumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F7714621DBB00821C84 /* ForumListViewController.m */; };
+		2F5F2F7814621DBB00821C84 /* ForumRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F2F7714621DBB00821C84 /* ForumRootViewController.m */; };
 		2F5F2F7A14621E3100821C84 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5F2F7914621E3100821C84 /* 09-chat-2.png */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +35,8 @@
 		2F5F2F671462167A00821C84 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		2F5F2F681462167A00821C84 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		2F5F2F6B1462191A00821C84 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
-		2F5F2F7614621DBB00821C84 /* ForumListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumListViewController.h; sourceTree = "<group>"; };
-		2F5F2F7714621DBB00821C84 /* ForumListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumListViewController.m; sourceTree = "<group>"; };
+		2F5F2F7614621DBB00821C84 /* ForumRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumRootViewController.h; sourceTree = "<group>"; };
+		2F5F2F7714621DBB00821C84 /* ForumRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumRootViewController.m; sourceTree = "<group>"; };
 		2F5F2F7914621E3100821C84 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,8 +135,8 @@
 		2F5F2F7214621D8E00821C84 /* Forums */ = {
 			isa = PBXGroup;
 			children = (
-				2F5F2F7614621DBB00821C84 /* ForumListViewController.h */,
-				2F5F2F7714621DBB00821C84 /* ForumListViewController.m */,
+				2F5F2F7614621DBB00821C84 /* ForumRootViewController.h */,
+				2F5F2F7714621DBB00821C84 /* ForumRootViewController.m */,
 			);
 			path = Forums;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 				2F5F2F391462128500821C84 /* main.m in Sources */,
 				2F5F2F621462161800821C84 /* AppDelegate.m in Sources */,
 				2F5F2F691462167A00821C84 /* AboutViewController.m in Sources */,
-				2F5F2F7814621DBB00821C84 /* ForumListViewController.m in Sources */,
+				2F5F2F7814621DBB00821C84 /* ForumRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

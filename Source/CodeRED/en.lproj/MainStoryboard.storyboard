@@ -24,7 +24,7 @@
         <scene sceneID="bdF-0g-7HH">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZE-54-sg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="7Fh-h2-yHy" customClass="ForumListViewController" sceneMemberID="viewController">
+                <tableViewController id="7Fh-h2-yHy" customClass="ForumRootViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0lF-UD-fmy">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,8 +195,8 @@
                 <relationship kind="outlet" name="versionLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="ForumListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ForumListViewController.h"/>
+        <class className="ForumRootViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ForumRootViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="footerView" candidateClass="UIView"/>
             </relationships>
