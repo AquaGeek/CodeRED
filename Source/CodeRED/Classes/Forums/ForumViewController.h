@@ -14,4 +14,6 @@
 
 @property (strong, nonatomic) Forum *forum;
 
+- (IBAction)refreshTapped:(id)sender;
+
 @end

@@ -8,6 +8,17 @@
 
 #import "Forum.h"
 
+#import "AFHTTPClient.h"
+
+@interface Forum()
+
+- (void)parseContentData:(NSData *)data;
+
+@end
+
+
+#pragma mark -
+
 @implementation Forum
 
 @synthesize forumId = _forumId;
@@ -15,6 +26,9 @@
 @synthesize childForums = _childForums;
 @synthesize threads = _threads;
 @synthesize totalThreads = _totalThreads;
+@synthesize currentPage = _currentPage;
+
+#pragma mark -
 
 + (Forum *)rootForum
 {
@@ -22,7 +36,6 @@
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSLog(@"Initializing forums...");
         // Initialize the root forum
         rootForum = [[Forum alloc] initWithTitle:@"REDUSER"];
         
@@ -68,6 +81,47 @@
     }
     
     return self;
+}
+
+
+#pragma mark -
+
+- (void)loadPage:(NSInteger)pageNumber withHandler:(void (^)(NSError *error))completionHandler
+{
+    NSParameterAssert(completionHandler != NULL);
+    NSParameterAssert(pageNumber > 0);
+    
+    // Load the page from RedUser.net
+    // TODO: Use new URL format
+    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://reduser.net/forum/"]];
+    [client getPath:@"forumdisplay.php"
+         parameters:[NSDictionary dictionaryWithObjectsAndKeys:self.forumId, @"f", @"desc", @"order",
+                     [NSString stringWithFormat:@"%d", pageNumber], @"page", nil]
+            success:^(id object)
+     {
+         // Success! Off to the races...
+         [self parseContentData:object];
+         
+         self.currentPage = pageNumber;
+         completionHandler(nil);
+     }
+            failure:^(NSHTTPURLResponse *response, NSError *error)
+     {
+         completionHandler(error);
+     }];
+}
+
+- (void)parseContentData:(NSData *)data
+{
+    // TODO: Set up a bunch of RegExps to pull out the threads
+    NSLog(@"Data: %@", data);
+}
+
+- (void)clearContents
+{
+    [_threads removeAllObjects];
+    _totalThreads = 0;
+    _currentPage = 0;
 }
 
 @end

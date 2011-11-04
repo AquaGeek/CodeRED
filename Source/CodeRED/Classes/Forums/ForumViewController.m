@@ -9,10 +9,23 @@
 #import "ForumViewController.h"
 
 #import "Forum.h"
+#import "Thread.h"
+#import "SlideUpProgressView.h"
+
+@interface ForumViewController()
+
+- (void)loadForumContentsWithPageNumber:(NSInteger)pageNumber;
+
+@end
+
+
+#pragma mark -
 
 @implementation ForumViewController
 
 @synthesize forum = _forum;
+
+#pragma mark Object Lifecycle
 
 - (void)didReceiveMemoryWarning
 {
@@ -22,7 +35,7 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View Lifecycle
+#pragma mark View Lifecycle
 
 - (void)viewDidLoad
 {
@@ -39,24 +52,16 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
+    
+    // Load the forum contents if necessary
+    // TODO: Better way to check for loaded
+    if (self.forum.currentPage == 0)
+    {
+        [self loadForumContentsWithPageNumber:1];
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -95,6 +100,49 @@
     // TODO: Configure the cell
     
     return cell;
+}
+
+
+#pragma mark -
+
+- (void)loadForumContentsWithPageNumber:(NSInteger)pageNumber
+{
+    NSParameterAssert(pageNumber > 0);
+    
+    // Show progress indicator
+    NSLog(@"Loading...");
+    SlideUpProgressView *progressView = [[SlideUpProgressView alloc] initWithFrame:CGRectZero];
+    [progressView slideUpIntoView:self.view];
+    
+    // Disable refreshing until we're done
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+    
+    // Load the contents
+    [self.forum loadPage:pageNumber withHandler:^(NSError *error) {
+        NSLog(@"Loaded");
+        
+        // Update the table view
+        [self.tableView reloadData];
+        
+        // Hide progress indicator
+        [progressView slideOut];
+        
+        if (error != nil)
+        {
+            NSLog(@"An error occurred: %@", [error localizedDescription]);
+        }
+        
+        // Re-enable refresh button
+        self.navigationItem.rightBarButtonItem.enabled = YES;
+    }];
+}
+
+- (IBAction)refreshTapped:(id)sender
+{
+    [self.forum clearContents];
+    [self.tableView reloadData];
+    
+    [self loadForumContentsWithPageNumber:1];
 }
 
 @end
