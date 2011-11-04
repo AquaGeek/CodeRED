@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2392D114637124008FC9C3 /* Thread.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2392D014637124008FC9C3 /* Thread.m */; };
 		2F5F2F2D1462128500821C84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5F2F2C1462128500821C84 /* UIKit.framework */; };
 		2F5F2F2F1462128500821C84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5F2F2E1462128500821C84 /* Foundation.framework */; };
 		2F5F2F311462128500821C84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5F2F301462128500821C84 /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F2392CF14637124008FC9C3 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		2F2392D014637124008FC9C3 /* Thread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thread.m; sourceTree = "<group>"; };
 		2F5F2F281462128500821C84 /* Code:RED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Code:RED.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5F2F2C1462128500821C84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F5F2F2E1462128500821C84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,6 +168,8 @@
 			children = (
 				2F5F2F841462245600821C84 /* Forum.h */,
 				2F5F2F851462245600821C84 /* Forum.m */,
+				2F2392CF14637124008FC9C3 /* Thread.h */,
+				2F2392D014637124008FC9C3 /* Thread.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				2F5F2F7D1462229B00821C84 /* ForumViewController.m in Sources */,
 				2F5F2F861462245600821C84 /* Forum.m in Sources */,
 				2F5F2F971462360800821C84 /* SectionHeaderView.m in Sources */,
+				2F2392D114637124008FC9C3 /* Thread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
