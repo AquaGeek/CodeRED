@@ -8,6 +8,8 @@
 
 #import "Forum.h"
 
+#import "AFHTTPClient.h"
+
 @interface Forum()
 
 - (void)parseContentData:(NSData *)data;
@@ -90,35 +92,29 @@
     NSParameterAssert(pageNumber > 0);
     
     // Load the page from RedUser.net
-    NSString *urlString = [NSString stringWithFormat:@"http://reduser.net/forum/forumdisplay.php?%@&order=desc&page=%d",
-                           self.forumId, pageNumber];  // TODO: Use new URL format
-    NSURL *forumURL = [NSURL URLWithString:urlString];
-    
-    // TODO: Move to the new networking stack
-    NSURLRequest *request = [NSURLRequest requestWithURL:forumURL];
-    NSURLResponse *response = nil;
-    NSError *error = nil;
-    NSData *content = [NSURLConnection sendSynchronousRequest:request
-                                            returningResponse:&response
-                                                        error:&error];
-    
-    if (error == nil)
-    {
-        // Success! Off to the races...
-        [self parseContentData:content];
-        
-        self.currentPage = pageNumber;
-        completionHandler(nil);
-    }
-    else
-    {
-        completionHandler(error);
-    }
+    // TODO: Use new URL format
+    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://reduser.net/forum/"]];
+    [client getPath:@"forumdisplay.php"
+         parameters:[NSDictionary dictionaryWithObjectsAndKeys:self.forumId, @"f", @"desc", @"order",
+                     [NSString stringWithFormat:@"%d", pageNumber], @"page", nil]
+            success:^(id object)
+     {
+         // Success! Off to the races...
+         [self parseContentData:object];
+         
+         self.currentPage = pageNumber;
+         completionHandler(nil);
+     }
+            failure:^(NSHTTPURLResponse *response, NSError *error)
+     {
+         completionHandler(error);
+     }];
 }
 
 - (void)parseContentData:(NSData *)data
 {
     // TODO: Set up a bunch of RegExps to pull out the threads
+    NSLog(@"Data: %@", data);
 }
 
 - (void)clearContents
