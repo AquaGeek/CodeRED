@@ -10,4 +10,12 @@
 
 @interface Thread : NSObject
 
+@property (copy, nonatomic) NSString *threadId;
+@property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *threadStarter;
+@property (copy, nonatomic, readonly) NSMutableArray *posts;
+
+// Designated initializer
+- (id)initWithId:(NSString *)threadId title:(NSString *)threadTitle;
+
 @end

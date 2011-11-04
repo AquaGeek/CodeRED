@@ -15,10 +15,13 @@
 @property (copy, nonatomic, readonly) NSMutableArray *childForums;
 @property (copy, nonatomic, readonly) NSMutableArray *threads;
 @property (assign, nonatomic) NSInteger totalThreads;
+@property (assign, nonatomic) NSInteger currentPage;
 
 + (Forum *)rootForum;
 
 // Designated initializer
 - (id)initWithTitle:(NSString *)title;
+- (void)loadPage:(NSInteger)pageNumber withHandler:(void (^)(NSError *error))completionHandler;
+- (void)clearContents;
 
 @end
