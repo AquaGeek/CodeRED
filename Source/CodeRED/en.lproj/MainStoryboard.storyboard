@@ -140,7 +140,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Vzg-Em-ZOr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="5zZ-nh-SRa"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="5zZ-nh-SRa">
+                            <connections>
+                                <action selector="refreshTapped:" destination="tEp-gp-mcx" id="ffm-8I-hZM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
             </objects>
@@ -271,6 +275,9 @@
         </class>
         <class className="ForumViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ForumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="refreshTapped:"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

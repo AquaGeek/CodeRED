@@ -10,6 +10,7 @@
 
 #import "Forum.h"
 #import "Thread.h"
+#import "SlideUpProgressView.h"
 
 @interface ForumViewController()
 
@@ -108,15 +109,40 @@
 {
     NSParameterAssert(pageNumber > 0);
     
-    // TODO: Show progress indicator
+    // Show progress indicator
+    NSLog(@"Loading...");
+    SlideUpProgressView *progressView = [[SlideUpProgressView alloc] initWithFrame:CGRectZero];
+    [progressView slideUpIntoView:self.view];
+    
+    // Disable refreshing until we're done
+    self.navigationItem.rightBarButtonItem.enabled = NO;
     
     // Load the contents
     [self.forum loadPage:pageNumber withHandler:^(NSError *error) {
+        NSLog(@"Loaded");
+        
         // Update the table view
         [self.tableView reloadData];
         
-        // TODO: Hide progress indicator
+        // Hide progress indicator
+        [progressView slideOut];
+        
+        if (error != nil)
+        {
+            NSLog(@"An error occurred: %@", [error localizedDescription]);
+        }
+        
+        // Re-enable refresh button
+        self.navigationItem.rightBarButtonItem.enabled = YES;
     }];
+}
+
+- (IBAction)refreshTapped:(id)sender
+{
+    [self.forum clearContents];
+    [self.tableView reloadData];
+    
+    [self loadForumContentsWithPageNumber:1];
 }
 
 @end
